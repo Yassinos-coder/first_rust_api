@@ -1,0 +1,47 @@
+# Build output
+/target
+**/*.rs.bk
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+id_rsa*
+id_ed25519*
+secrets/
+credentials*.json
+service-account*.json
+
+# Local databases and dumps
+*.sqlite
+*.sqlite3
+*.db
+*.sql.gz
+*.dump
+*.bak
+pgdata/
+
+# Logs and coverage
+*.log
+logs/
+*.profraw
+lcov.info
+tarpaulin-report.html
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code local files
+.claude/
+CLAUDE.local.md
